@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 600px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      #quote-text {
+        font-size: 1.4rem;
+        font-style: italic;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      #quote-author {
+        font-size: 1rem;
+        color: #888;
+        margin-bottom: 1.5rem;
+      }
+
+      button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="card">
+
+      <!-- The quote text will go here -->
+      <p id="quote-text">Your quote will appear here...</p>
+
+      <!-- The author will go here -->
+      <p id="quote-author">— Author</p>
+
+      <!-- Button to get a new quote -->
+      <button id="new-quote-btn">New Quote</button>
+
+    </div>
+
+    <!-- We'll write our JavaScript here -->
+    <script src="script.js"></script>
+  </body>
+</html>
