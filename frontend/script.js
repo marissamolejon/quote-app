@@ -8,7 +8,7 @@ async function fetchQuote() {
   quoteAuthor.textContent = "";
 
   try {
-   const response = await fetch("http://127.0.0.1:3000/");
+   const response = await fetch("/quotes");
 
    const data = await response.json();
 
